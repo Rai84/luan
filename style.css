@@ -4,8 +4,8 @@
 	--text: #1f2937;
 	--muted: #6b7280;
 	--border: #e5e7eb;
-	--accent: #ff7a1a;
-	--accent-200: #ff8a33;
+	--accent: #28547e;
+	--accent-200: #17324b;
 	--shadow: 0 10px 25px rgba(16, 24, 40, 0.08);
 }
 
@@ -18,6 +18,71 @@ body {
 	background:
 		radial-gradient(1000px 300px at 10% 0%, #ffffff 0, #f2f3f5 40%, #e9eaee 100%);
 }
+
+/* tela bem vindo */
+
+.tela-inicial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+}
+
+.boas-vindas {
+	background: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		border-radius: 10px;
+		border: 1px solid rgba(255, 255, 255, 0.18);
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	padding: 40px;
+	border-radius: 16px;
+	text-align: center;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+}
+
+.botao-primario {
+	margin-top: 20px;
+	padding: 14px 24px;
+	font-size: 16px;
+	background: #28547e;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.botao-primario:hover {
+	background: #17324b;
+}
+
+.video-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* faz o vídeo cobrir toda a tela */
+	z-index: -1;
+	/* fica atrás do conteúdo */
+	background: rgba(0, 0, 0, 0.599);
+}
+
+.conteudo {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.937);
+	/* opcional: escurecer o vídeo */
+}
+
+/* tela app */
 
 .app {
 	display: grid;

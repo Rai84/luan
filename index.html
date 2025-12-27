@@ -1,248 +1,26 @@
-<!doctype html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Croissant Shop</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="app">
-            <!-- Sidebar -->        
-            <aside class="sidebar">
-                <div class="logo">
-                    <span class="logo-mark">Logo</span>
-                </div>
-                <!-- <nav class="side-nav" aria-label="Menu">
-                    <button class="icon-btn" aria-label="Home">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
-                    </button>
-                    <button class="icon-btn" aria-label="Orders">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4"/></svg>
-                    </button>
-                    <button class="icon-btn" aria-label="Products">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-                    </button>
-                    <button class="icon-btn" aria-label="Wallet">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M16 12h5"/></svg>
-                    </button>
-                    <button class="icon-btn" aria-label="Settings">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1 1 0 0 0 .2 1.1l.1.1a2 2 0 0 1-2.8 2.8l-.1-.1a1 1 0 0 0-1.1-.2 1 1 0 0 0-.6.8 2 2 0 0 1-4 0 1 1 0 0 0-.6-.8 1 1 0 0 0-1.1.2l-.1.1a2 2 0 0 1-2.8-2.8l.1-.1a1 1 0 0 0 .2-1.1 1 1 0 0 0-.8-.6 2 2 0 0 1 0-4 1 1 0 0 0 .8-.6 1 1 0 0 0-.2-1.1l-.1-.1A2 2 0 0 1 6.9 4l.1.1a1 1 0 0 0 1.1.2 1 1 0 0 0 .6-.8 2 2 0 0 1 4 0 1 1 0 0 0 .6.8 1 1 0 0 0 1.1-.2l.1-.1A2 2 0 0 1 20 6.9l-.1.1a1 1 0 0 0-.2 1.1 1 1 0 0 0 .8.6 2 2 0 0 1 0 4 1 1 0 0 0-.8.6Z"/></svg>
-                    </button>
-                </nav> -->
-            </aside>
-
-            <!-- Main content -->
-            <main class="content">
-                <header class="topbar">
-                    <div class="welcome">
-                        <h1>Bem-vindo ao Don Fuego</h1>
-                        <p>Ar do Brasil com alma Argentina</p>
-                    </div>
-                    <!-- <div class="search">
-                        <div class="input">
-                            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-                            <input type="text" placeholder="Search product..." aria-label="Buscar produtos" />
-                        </div>
-                        <button class="icon-btn" aria-label="Filter">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5h18l-7 7v5l-4 2v-7L3 5Z"/></svg>
-                        </button>
-                    </div> -->
-                </header>
-
-                <div class="chips">
-                    <button class="chip" aria-pressed="false">Combos</button>
-                    <button class="chip active" aria-pressed="true">Hamburger Carne altas</button>
-                    <button class="chip" aria-pressed="false">Hamburger Smashs</button>
-                    <button class="chip" aria-pressed="false">Acompanhamentos</button>
-                    <button class="chip" aria-pressed="false">KIDS</button>
-                    <button class="chip" aria-pressed="false">Refrigerantes e Refrescos</button>
-                </div>
-
-                <section class="products" aria-label="Produtos">
-                    <!-- Row 1 -->
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/-1758152228516blob.webp" alt="El Gigante" />
-                        <div class="card-body">
-                            <h3>El Gigante</h3>
-                            <p>O maior monstro da Don Fuego! São 3 hambúrgueres artesanais suculentos, cada um coberto com bacon crocante em todas as camadas, 3 fatias de queijo derretido, Oreo rings crocantes, toque exclusivo de chimichurri argentino e picles frescos para equilibrar o sabor.</p>
-                            <div class="price-row">
-                                <span class="price">$55,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509071928_H782_iblob.webp" alt="Don Fuego Provolone" />
-                        <div class="card-body">
-                            <h3>Don Fuego Provolone</h3>
-                            <p>A ousadia da parrilla em sua forma máxima: dois hambúrgueres artesanais deliciosos de 150g, envolvidos em uma dupla camada de provolone levemente tostado, cebola caramelizada a fogo lento, bacon crocante e maionese verde exclusiva da casa, no macio pão brioche selado na brasa.</p>
-                            <div class="price-row">
-                                <span class="price">$42,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509071923_7OP0_iblob.webp" alt="Berry Whipped Cream Croissant" />
-                        <div class="card-body">
-                            <h3>Patagônia</h3>
-                            <p>Dois incríveis hambúrgueres de costela argentina de 150g, cheddar cremoso e cebola crispy em perfeita harmonia. Finalizado com tomate fresco e maionese chimichurri, no pão australiano macio e levemente adocicado. Um hambúrguer robusto, sofisticado e inesquecível.</p>
-                            <div class="price-row">
-                                <span class="price">$44,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-
-                    <!-- Row 2 -->
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509071917_I1W6_iblob.webp" alt="Sweet Granulated Sugar Croissant" />
-                        <div class="card-body">
-                            <h3>Mendonza picante</h3>
-                            <p>Um hambúrguer de personalidade: delicioso hambúrguer de costela argentina 150g, queijo cheddar cremoso, jalapeño fresco e geleia artesanal de pimenta. Acompanhado de cebola empanada crocante e servido no pão francês rústico. Uma explosão equilibrada entre picância, doçura e intensidade.</p>
-                            <div class="price-row">
-                                <span class="price">$38,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509101341_T8MA_iblob.webp" alt="Sweet Chocolate Chocochips Croissant" />
-                        <div class="card-body">
-                            <h3>Pollo Crocante</h3>
-                            <p>Frango empanado 150g com crocância irresistível, coberto por queijo mussarela empanado e harmonizado com frescor de alface americana e tomate. Finalizado com maionese verde da casa e toque de chimichurri, no pão francês rústico. Textura e sabor em sua melhor versão.</p>
-                            <div class="price-row">
-                                <span class="price">$34,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509101341_T8MA_iblob.webp" alt="Sweet Chocolate Chocochips Croissant" />
-                        <div class="card-body">
-                            <h3>Choripan</h3>
-                            <p>O clássico das ruas argentinas em versão gourmet: linguiça toscana artesanal grelhada na parrilla, pão francês rústico e o autêntico chimichurri da casa. Finalizado com maionese especial, salsa fresca e cebola roxa. Simples, tradicional e cheio de sabor.</p>
-                            <div class="price-row">
-                                <span class="price">$22,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-
-                    <article class="card">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509071930_62VS_iblob.webp" alt="Basic Croissant La Ta Dhore" />
-                        <div class="card-body">
-                            <h3>Buenos Aires Classico</h3>
-                            <p>A tradução da tradição argentina: Um suculento hambúrguer artesanal de 150g no pão de gergelim, coberto por mussarela derretida, alface americana crocante, tomate fresco e cebola roxa marcante. Finalizado com maionese especial da casa, entrega frescor e equilíbrio em cada mordida.</p>
-                            <div class="price-row">
-                                <span class="price">$32,00</span>
-                                
-                            </div>
-                        </div>
-                        <button class="cart-btn" aria-label="Add to cart">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6h15l-2 9H7L6 6Z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
-                        </button>
-                    </article>
-                </section>
-            </main>
-
-            <!-- Right order panel -->
-            <aside class="order">
-                <header class="order-header">
-                    <h2>Current Order</h2>
-                    <!-- <button class="icon-btn" aria-label="Settings">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1 1 0 0 0 .2 1.1l.1.1a2 2 0 0 1-2.8 2.8l-.1-.1a1 1 0 0 0-1.1-.2 1 1 0 0 0-.6.8 2 2 0 0 1-4 0 1 1 0 0 0-.6-.8 1 1 0 0 0-1.1.2l-.1.1a2 2 0 0 1-2.8-2.8l.1-.1a1 1 0 0 0 .2-1.1 1 1 0 0 0-.8-.6 2 2 0 0 1 0-4 1 1 0 0 0 .8-.6 1 1 0 0 0-.2-1.1l-.1-.1A2 2 0 0 1 6.9 4l.1.1a1 1 0 0 0 1.1.2 1 1 0 0 0 .6-.8 2 2 0 0 1 4 0 1 1 0 0 0 .6.8 1 1 0 0 0 1.1-.2l.1-.1A2 2 0 0 1 20 6.9l-.1.1a1 1 0 0 0-.2 1.1 1 1 0 0 0 .8.6 2 2 0 0 1 0 4 1 1 0 0 0-.8.6Z"/></svg>
-                    </button> -->
-                </header>
-
-                <ul class="order-list">
-                    <li class="order-item">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/202509081408_655E_iblob_600.webp" alt="Combo (Casal) Doble Provolone" />
-                        <div class="details">
-                            <h4>Combo (Casal) Doble Provolone</h4>
-                            <span class="price">$110.90</span>
-                        </div>
-                        <div class="qty">
-                            <button class="qty-btn" aria-label="Decrease">–</button>
-                            <span>1</span>
-                            <button class="qty-btn" aria-label="Increase">+</button>
-                        </div>
-                    </li>
-
-                    <li class="order-item">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/-1758152228516blob.webp" alt="El Gigante" />
-                        <div class="details">
-                            <h4>El Gigante</h4>
-                            <span class="price">$55,00</span>
-                        </div>
-                        <div class="qty">
-                            <button class="qty-btn" aria-label="Decrease">–</button>
-                            <span>2</span>
-                            <button class="qty-btn" aria-label="Increase">+</button>
-                        </div>
-                    </li>
-
-                    <li class="order-item">
-                        <img src="https://client-assets.anota.ai/produtos/68bf3cd0a851faa1843af08d/-1758153194828blob.webp" alt="Sweet Granulated Sugar Croissant" />
-                        <div class="details">
-                            <h4>Box de batata com cheddar e bacon 450g</h4>
-                            <span class="price">$27,00</span>
-                        </div>
-                        <div class="qty">
-                            <button class="qty-btn" aria-label="Decrease">–</button>
-                            <span>1</span>
-                            <button class="qty-btn" aria-label="Increase">+</button>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="summary">
-                    <div class="row"><span>Subtotal</span><span>$192,90</span></div>
-                    <div class="row"><span>Desconto</span><span>- $5.00</span></div>
-                    <!-- <div class="row"><span>Total sales tax</span><span>$2.25</span></div> -->
-                    <div class="divider"></div>
-                    <div class="row total"><span>Total</span><span>$187,90</span></div>
-                </div>
-
-                <button class="pay-btn">Continuar para o pagamento</button>
-            </aside>
-        </div>
-    </body>
-</html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Don Fuego</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    
+<body class="tela-inicial">
+
+    <video class="video-bg" autoplay muted loop>
+    <source src="fundo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo em HTML5.
+  </video>
+
+  <div class="boas-vindas">
+    <img src="logo2.png" alt="Logo do Don Fuego" class="logo" style="width: 400px; height: auto;"/>
+    <h1>Don Fuego</h1>
+    <p>Ar do Brasil com alma Argentina</p>
+    <button class="botao-primario" onclick="irParaSegundaTela()">
+      Iniciar Pedido
+    </button>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
